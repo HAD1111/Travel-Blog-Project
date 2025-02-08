@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'YsabeauSC';
+    src: url('fonts/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to bottom,#f4f9e9,#7283cf);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    background-color: #284b63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headtit {
+    color: #b4b8ab;
+    font-size: 3.5rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #284b63;
+    z-index: 100;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #284b63;
+}
+
+nav span {
+    color: #b4b8ab;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-bottom: 2px solid #284b63;
+}
+
+nav span:hover {
+    color: #e7d530;
+    border-bottom: 2px solid #e7d530;
+    transition: ease 0.5s;
+}
+
+hr.separator {
+    border: 0;
+    border-top: 4px solid #e7d530;
+    width: 80%;
+    opacity: 0.5;
+}
+
+.tips-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    gap: 4rem;
+    max-width: 100%;
+}
+
+.tips{
+    max-width: 48rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-info{
+    text-align: center;
+    width: 90%;
+    max-width: 55rem;
+}
+
+
+
+h1{
+    border-top: 4px  solid yellow;
+    border-bottom: 4px  solid yellow;
+    color: #04263a;
+    font-size: 3rem;
+}
+
+.spans{
+    color: red;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.tips-li{
+    font-size: 2rem;
+    color: #152e3f;
+}
+.tips-image img{
+    object-fit: cover;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    width: 40rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+}
+
+a{
+    all: unset;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: #153243;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+

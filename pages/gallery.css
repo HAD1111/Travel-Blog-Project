@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'YsabeauSC';
+    src: url('fonts/Ysabeau_SC/YsabeauSC-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: linear-gradient(to bottom,#f4f9e9,#7283cf);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    background-color: #284b63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headtit {
+    color: #b4b8ab;
+    font-size: 3.5rem;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #284b63;
+    z-index: 100;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #284b63;
+}
+
+nav span {
+    color: #b4b8ab;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    display: inline-block;
+    border-bottom: 2px solid #284b63;
+}
+
+nav span:hover {
+    color: #e7d530;
+    border-bottom: 2px solid #e7d530;
+    transition: ease 0.5s;
+}
+
+hr.separator {
+    border: 0;
+    border-top: 4px solid #e7d530;
+    width: 80%;
+    opacity: 0.5;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: white;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+a{
+    all: unset;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+footer{
+    background-color: #153243;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+
